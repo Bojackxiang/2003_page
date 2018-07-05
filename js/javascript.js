@@ -57,7 +57,7 @@ $(document).ready(function () {
             }
 
             $.ajax({
-                url: "http://45.76.124.254/api/submit",
+                url: "http://45.76.124.254/api/submit/",
                 type: 'POST',
                 headers: {
                     'Conent-Type': 'application/x-www-form-urlencoded',
