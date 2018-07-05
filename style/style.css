@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-bar {
+  background-image: url("../assets/banner.jpg");
+  height: 766px;
+  background-repeat: no-repeat;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  top: 70px;
+  left: 550px;
+  display: inline-block;
+}
+
+.menu-bar ul li {
+  float: left;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+.menu-bar ul li a {
+  display: block;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-bar ul li a:hover {}
+
+/* <!-- ********************************************* -->
+<!-- aisf 介绍 --> */
+
+.intro {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.intro .container {
+  width: 960px;
+}
+
+.aisf-logo {
+  height: 300px;
+}
+
+.intro-content-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.intro-content-description {
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+.card-intro .container {
+  width: 960px;
+  background-color: #f9f9f9;
+}
+
+.card-intro-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.card-intro-content {
+  padding-right: 35px;
+  letter-spacing: 1px;
+}
+
+.card-intro-button {
+  text-decoration: none !important;
+  padding: 5px 10px;
+  background-color: #b22222;
+  color: white;
+}
+
+.card-intro-button:hover {
+  color: white;
+}
+
+.card-intro-card {
+  width: 100%;
+}
+
+.section-title p {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card {
+  border-bottom: 10px solid #cd292b;
+}
+
+.card-img {
+  text-align: center;
+}
+
+.dot {
+  font-size: 15px;
+  color: #b22222;
+}
+
+.card-content {
+  padding: 5px;
+  margin-top: 10px
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 7px;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+.card-address {
+  padding: 5px;
+  font-size: 9px;
+  padding-top: 0px;
+}
+
+.card-address p {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.card {
+  box-shadow: 2px 2px 2px grey;
+  margin-top: 30px;
+}
+
+.register-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.form-container .row {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.register-form-button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: linear-gradient(-90deg, #b51e2e, #e24727);
+  color: white;
+  display: inline-block;
+  margin: 0 auto;
+  border: 0px;
+}
+
+.register-form-button-wrap {
+  text-align: center;
+  padding: 20px;
+}
+
+.registerForm form {
+  margin-top: 100px;
+}
+
+/* ******************************************* */
+
+/* footer 样式 */
+
+.footer-wrapper {
+  background: linear-gradient( #e24727, #ba1f2d);
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.footer-wrapper .container {
+  width: 960px;
+}
+
+.footer-content {
+  padding-top: 50px;
+}
+
+.footer-content p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 19px;
+}
+
+.footer-content .larger {
+  font-weight: bold;
+}
+
+.footer-content .small {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.scan-img {
+  text-align: right;
+}
+
+.scan-img img {
+  width: 45%;
+}
+
+.footer-right {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-weight:bold;
+}
+
+.blank-row {
+  padding-top: 50px;
+}
+
+.card{
+  border-bottom: 15px solid #b22222;
+  margin-top: 20px;
+}
+
+.card-image img{
+  width: 100%;
+}
+
+.card-address{
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.section .container{
+  width: 960px;
+}
+
+.card-description{
+  padding: 10px;
+  font-size: 10px;
+}
+
+.floating-button{
+  position: fixed;
+  z-index: 222;
+  right: 0;
+  top: 100px;
+  width: 100px;
+}
+
+.floating-button img{
+  width: 100%;
+}
+
+.floating-button:hover{
+  cursor: pointer;
+}
