@@ -23,7 +23,7 @@ body {
   overflow: hidden;
   position: relative;
   top: 70px;
-  left: 550px;
+  left: 650px;
   display: inline-block;
 }
 
@@ -41,35 +41,39 @@ body {
   text-decoration: none;
 }
 
-.menu-bar ul li a:hover {}
 
 /* <!-- ********************************************* -->
 <!-- aisf 介绍 --> */
 
 .intro {
   background-color: white;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 
 .intro .container {
   width: 960px;
 }
 
+
+.sliding-button{
+  cursor: pointer;
+}
+
 .aisf-logo {
   height: 300px;
 }
 
+
+
 .intro-content-title {
   font-size: 30px;
   font-weight: bold;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 70px;
 }
 
 .intro-content-description {
   font-size: 12px;
-  padding-left: 30px;
-  padding-right: 50px;
+  padding-right: 15px;
 }
 
 .card-intro .container {
@@ -84,8 +88,9 @@ body {
 }
 
 .card-intro-content {
-  padding-right: 35px;
+  padding-right: 90px;
   letter-spacing: 1px;
+  font-size: 9px;
 }
 
 .card-intro-button {
@@ -93,6 +98,10 @@ body {
   padding: 5px 10px;
   background-color: #b22222;
   color: white;
+}
+
+.card-intro-button:hover{
+  cursor: pointer;
 }
 
 .card-intro-button:hover {
@@ -111,7 +120,9 @@ body {
 }
 
 .card {
+  padding-top: 20px;
   border-bottom: 10px solid #cd292b;
+  background-color: white;
 }
 
 .card-img {
@@ -147,14 +158,14 @@ body {
 }
 
 .card {
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
 }
 
 .register-wrap {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: white;
+  ;
 }
 
 .form-container .row {
@@ -177,8 +188,13 @@ body {
   padding: 20px;
 }
 
+.registerForm{
+  width: 960px;
+}
+
 .registerForm form {
   margin-top: 100px;
+  width: 960px;
 }
 
 /* ******************************************* */
@@ -187,7 +203,7 @@ body {
 
 .footer-wrapper {
   background: linear-gradient( #e24727, #ba1f2d);
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -217,10 +233,11 @@ body {
 
 .scan-img {
   text-align: right;
+  padding-top: 50px;
 }
 
 .scan-img img {
-  width: 45%;
+  width: 30%;
 }
 
 .footer-right {
@@ -239,8 +256,12 @@ body {
   margin-top: 20px;
 }
 
+.card-image{
+  text-align: center;
+}
+
 .card-image img{
-  width: 100%;
+  width: 70%;
 }
 
 .card-address{
@@ -256,6 +277,10 @@ body {
 .card-description{
   padding: 10px;
   font-size: 10px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-top: 30px;
+
 }
 
 .floating-button{
@@ -273,3 +298,4 @@ body {
 .floating-button:hover{
   cursor: pointer;
 }
+
