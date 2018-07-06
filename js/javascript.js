@@ -64,10 +64,10 @@ $(document).ready(function () {
                 },
                 
                 success: function (body, status, xhr) {
-                    console.log(data);
+                    console.log(body)
                 },
                 error: function (body, status, xhr) {
-                    console.log(data)
+                    console.log(body);
                 }
             })
         }
