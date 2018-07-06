@@ -57,16 +57,16 @@ $(document).ready(function () {
             }
 
             $.ajax({
-                url: "http://45.76.124.254/api/submit/",
+                url: "https://www.aisfexpo.com.au/api/submit",
                 type: 'POST',
                 headers: {
                     'Conent-Type': 'application/x-www-form-urlencoded',
                 },
                 
-                success: function (data, status, xhr) {
+                success: function (body, status, xhr) {
                     console.log(data);
                 },
-                error: function (data, status, xhr) {
+                error: function (body, status, xhr) {
                     console.log(data)
                 }
             })
