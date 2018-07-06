@@ -303,3 +303,135 @@ body {
   display: none;
   color: #b22222;
 }
+
+
+/* **************************** */
+/* mobile header background */
+.m-background{
+  display: none;
+}
+@media (max-width: 1000px){
+  .m-wrapper{
+    background-color: lightgrey;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .m-banner img{
+    width: 100%;
+  }
+
+  .btn-register{
+    margin-top: -50px;
+    text-align: right;
+    padding-right: 90px;
+  }
+
+  .btn-float img{
+    width: 50px;
+  }
+
+  .logo-container{
+    width: 150px;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .logo-container img{
+    width: 250px;
+  }
+
+  .title{
+    margin-top: 30px;
+  }
+
+  .title .aisf-title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+
+  .aisf-description{
+    font-size: 12px;
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 20px;
+  }
+
+  .card-img-wrap{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .card-img-wrap img{
+    width: 300px;
+  }
+
+  .obtain-button-wrapper{
+    padding-left: 20px;
+  }
+  .register-button{
+    background-color: #b22222;
+    padding: 5px 10px;
+    color: white;
+  }
+
+  .title-center{
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .business-wrapper{
+    margin-top: 50px;
+  }
+
+  .card-container{
+    padding-left: 105px;
+    padding-right: 15px;
+  }
+
+  .title-register{
+    margin-top: 35px;
+  }
+
+  .title-register{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .footer-container{
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 35px;
+    color: white;
+    background: linear-gradient(-90deg, #b51e2e, #e24727);
+    line-height: 30px;
+  }
+
+  .footer-contact{
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(-90deg, #b51e2e, #e24727);
+    line-height: 15px;
+    font-weight: bold;
+  }
+  
+  .scan{
+    margin-top: 15px;
+  }
+
+  .footer-container .scan img{
+    width: 60px;  
+  }
+
+  .footer-container{
+    margin-top: 50px;
+  }
+
+}

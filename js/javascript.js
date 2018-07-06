@@ -64,34 +64,41 @@ $(document).ready(function() {
     var emailAddress = $("#userEmail").val();
     var major = $("#userMajor").val();
 
-    var body = {
-      name: name,
-      emailAddress: emailAddress,
-      school: school,
-      major: major
-    };
+    if (!name || !school || !emailAddress || !major) {
+      $(".submit-alert").css("display", "block");
+      $(".submit-alert").html("请填写完整信息以获取福利");
+    } else {
+      var body = {
+        name: name,
+        emailAddress: emailAddress,
+        school: school,
+        major: major
+      };
 
-    $.ajax({
-      url: "https://www.aisfexpo.com.au/api/submit",
-      type: "POST",
-      dataType: 'json',
-      data: body,
-      headers: {
-          'Conent-Type': 'application/x-www-form-urlencoded',
-      },
+      $.ajax({
+        url: "https://www.aisfexpo.com.au/api/submit",
+        type: "POST",
+        dataType: "json",
+        data: body,
+        headers: {
+          "Conent-Type": "application/x-www-form-urlencoded"
+        },
 
-      success: function(response, status, xhr) {
-        if(response == "bad"){
-          $(".submit-alert").css('display','block');
-          $(".submit-alert").html("您已注册过。");
-        }else{
-          $(".submit-alert").css('display','block');
-          $(".submit-alert").html("恭喜您已成功提交，请注意查看邮箱，获取福利");
+        success: function(response, status, xhr) {
+          if (response == "bad") {
+            $(".submit-alert").css("display", "block");
+            $(".submit-alert").html("您已注册过。");
+          } else {
+            $(".submit-alert").css("display", "block");
+            $(".submit-alert").html(
+              "恭喜您已成功提交，请注意查看邮箱，获取福利！"
+            );
+          }
+        },
+        error: function(data, status, xhr) {
+          console.log(JSON.parse(data));
         }
-      },
-      error: function(data, status, xhr) {
-        console.log(JSON.parse(data));
-      }
-    });
+      });
+    }
   });
 });

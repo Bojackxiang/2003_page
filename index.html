@@ -18,8 +18,8 @@
 
 <body>
   <!-- ******************************************** -->
-  <!-- banner and menu bar -->
-  <div style="background-color:#f0f0f0">
+  <!-- banner and menu bar (DESKTOP)-->
+  <div class="desktop" style="background-color:#f0f0f0">
     <div class="body-container">
       <!-- ********************************************* -->
       <!-- menu bar -->
@@ -39,6 +39,19 @@
           </li>
         </ul>
       </div>
+
+      <!-- ******************************************** -->
+      <!-- mobile background -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="m-banner">
+              <img src="./assets/banner-m.PNG" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- ********************************************* -->
       <!-- aisf 介绍 -->
@@ -241,22 +254,22 @@
 
 
       <form>
-        <div class="container form-container">
+        <div class="container form-container" style="width: 100%;">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="exampleInputEmail1">姓名(*必填)</label>
-                <input id="userName" type="text" class="form-control" aria-describedby="emailHelp" placeholder="请输入姓名">
+                <input id="userName" type="text" class="form-control" aria-describedby="emailHelp" placeholder="请输入姓名" required>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Email(*必填)</label>
-                <input id="userEmail" type="email" class="form-control" placeholder="请输入正确邮箱以获取入场券">
+                <input id="userEmail" type="email" class="form-control" placeholder="请输入正确邮箱以获取入场券" required>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <label for="exampleInputEmail1">学校(必填)</label>
-                <input id="userSchool" type="text" class="form-control" placeholder="请输入电话">
+                <label for="exampleInputEmail1">学校(*必填)</label>
+                <input id="userSchool" type="text" class="form-control" placeholder="请输入电话" required>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">电话(选填)</label>
@@ -268,7 +281,7 @@
         <div class="submit-alert animated fadeIn">
         </div>
         <div class="register-form-button-wrap">
-          <button id="submit-button" class="register-form-button" type="submit">完成注册</button>
+          <button id="submit-button" class="register-form-button" type="submit">提交</button>
         </div>
       </form>
     </div>
@@ -276,7 +289,7 @@
 
   <!-- ********************************************* -->
   <!-- footer -->
-  <div class="footer-wrapper">
+  <div class="footer-wrapper desktop">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 footer-content">
@@ -301,16 +314,221 @@
       </div>
     </div>
   </div>
-
   </div>
 
-  <div class="floating-button">
+  <div class="floating-button desktop">
     <a id="sliding">
       <img src="./assets/float.png" alt="">
     </a>
   </div>
 
+  <!-- banner and menu bar (mobile)-->
+  <div class="m-wrapper">
+    <!-- mobile banner  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 m-banner">
+          <img src="./assets/banner-m.PNG" alt="">
+          <div class="btn-register btn-float">
+            <img src="./assets/float.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- aisf logo -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 logo-container">
+          <img src="./assets/aisf-logo.png" alt="">
+        </div>
+        <div class="col-xs-12 log-description">
+          <p class="title">
+            <span class="aisf-title top-padding-20">AISF是什么</span>
+          </p>
+          <p class="aisf-description">
+            AISF全称Australia International Student Festival ，中文是澳大利亚国际留学生节，是澳洲首个为国际 留学生准备的大型互动体验节日。由AISF组委会主办 ，旨在为赴澳留学的国际学生们提供多元化的信息和
+            优质服务，立志打造关注澳洲留学生校内外生活信息 服务的一站式平台。目的与宗旨AISF组委会打破传统 教育展的刻板模式，通过整合澳洲各界资源推陈出新 ，将各行业资讯，商家优惠，体验服务等系列活动融 合于一体，打穿留学生校园内外的壁垒，真正做到全
+            方位关注留学生生活，达成一站式便捷服务，全力帮 助他们收获更好的留学体验。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- card intro -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 card-img-wrap">
+          <img src="./assets/card.PNG" alt="">
+        </div>
+        <div class="col-xs-12">
+          <p class="title">
+            <span class="aisf-title top-padding-20">ALL PASS</span>
+          </p>
+          <p class="aisf-description">
+            为了满足广大在澳生活的国际留学生们对美食和服务 上的优惠需求，AISF组委会特别推出了ALL PASS福 利卡。凭借此卡即能享受各大商家持续更新的优惠长 达一 年之久!同时AISF组委会将不断扩充和提升商 家的数量与质量，不断升级大家在澳的吃喝玩乐消费
+            体验。
+          </p>
+        </div>
+      </div>
+      <div class="obtain-button-wrapper">
+        <button class="register-button">
+          点击获取
+        </button>
+      </div>
+
+    </div>
+
+    <!-- business intro -->
+    <div class="business-wrapper container">
+      <div class="row">
+        <p class="title-center">
+          ALL PASS 商家优惠
+        </p>
+
+        <!-- right card   -->
+        <div class="card-container col-xs-6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/LOGO-03.png" alt="">
+            </div>
+
+            <div class="card-description">
+              <p>
+                <span class="dot">•</span> 消费美甲/美睫项目$100刀以下减$5;
+                <br>
+                <span class="dot">•</span> 消费美甲/美睫项目$100刀及以上减$10 </p>
+              <p class="card-address">
+                地址: 509, 368 Sussex Street, Sydney 有效期: 2018年12月31日
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/LOGO-06.png" alt="">
+            </div>
+
+            <div class="card-description">
+              <p>
+                <span class="dot">•</span> 此券限午市使用
+                <br>
+                <span class="dot">•</span> 此劵可叠加使用
+                <br>
+                <span class="dot">•</span> 此劵不可与其他活动同时使用</p>
+              <p class="card-address">
+                地址: Level 1 Chinatown Center 有效期: 2018年10月31日
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/LOGO-07.png" alt="">
+            </div>
+
+            <div class="card-description">
+              <p>
+                <span class="dot">•</span> 在austickets.com.au上购买任意门票，
+                <br>
+                <span class="dot">•</span> 客服微信号:AusTickets_CS 有效期:2018年12月31日</p>
+
+              <p class="card-address">
+                地址: Level 1 Chinatown Center 有效期: 2018年10月31日
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-container col-xs-6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/LOGO-08.png" alt="">
+            </div>
+
+            <div class="card-description">
+              <p>
+                <span class="dot">•</span> 任意购买两杯饮品，即免费送 焦糖布丁一个
+                <br>
+                <span class="dot">•</span> 焦糖布丁每日数量有限，先到先得</p>
+              <p class="card-address">
+                地址: 18 Goulburn Street, Sydney 有效期: 2018年7月1日
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="./assets/LOGO-04.png" alt="">
+            </div>
+
+            <div class="card-description">
+              <p>
+                <span class="dot">•</span> 在指定门店消费可抵服务费现金使用
+                <br>
+                <span class="dot">•</span> 本券每人仅限使用一次，且不与其他 优惠同享</p>
+              <p class="card-address">
+                地址: Level 4, 280 Pitt Street, Sydney 有效期: 2018年12月31日
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="register container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="title-register">免费报名</p> 
+          <form>
+            <div class="form-group">
+              <label for="email">姓名(*必填)</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">邮件(*必填)</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">电话(*必填)</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">学校(*选填)</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            
+            <button class="register-button" type="submit" class="btn btn-default">完成注册</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class=" footer-container container">
+      <div class="col-xs-12">
+        <p class="footer-intro">
+          2018年华为AISF <br> 澳大利亚国际留学生节招商火热进行中 <br> 欢迎联系AISF组委会
+        </p>
+      </div>
+
+      <div class="col-xs-12">
+        <p class="footer-contact">
+          TEL: +61 8079 7012/ 0405966000 <br> Email: admin@aisfexpo.com.au
+        </p>
+      </div>
+
+      <div class="scan col-xs-12">
+        <img src="./assets/scan.JPG" alt="">
+      </div>
+    </div>
+
+
+  </div>
+  </div>
 
 </body>
 
