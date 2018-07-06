@@ -307,10 +307,22 @@ body {
 
 /* **************************** */
 /* mobile header background */
-.m-background{
+.m-wrapper{
+  display: none;
+}
+
+.m-banner{
   display: none;
 }
 @media (max-width: 1000px){
+  .m-wrapper{
+    display: block;
+  }
+  
+  .m-banner{
+    display: block;
+  }
+
   .m-wrapper{
     background-color: lightgrey;
   }
