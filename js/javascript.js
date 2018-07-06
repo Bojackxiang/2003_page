@@ -64,6 +64,15 @@ $(document).ready(function() {
     );
   });
 
+  $("#f-button").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#m-registerForm").offset().top
+      },
+      1000
+    );
+  });
+
   $("#submit-button").click(function(e) {
     e.preventDefault();
     e.stopPropagation();
