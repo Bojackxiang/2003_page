@@ -75,11 +75,26 @@ $(document).ready(function() {
 
   function phoneteset(major){
     var phonenumber = major.split("");
-    console.log(phonenumber)
-
-    if(phonenumber.length !=10 || phonenumber[0] != "0" || phonenumber[1] != "4"){
+    
+    if(phonenumber.length != 10){
+      console.log("problem1")
       return false;
     }
+
+    if(phonenumber[0] != "0"){
+      console.log("problem2")
+      return false;
+    }
+
+    if(phonenumber[1] != "4"){
+      console.log("problem3")
+      return false;
+    }
+
+    return true
+
+
+    
   }
 
   $("#submit-button").click(function(e) {
