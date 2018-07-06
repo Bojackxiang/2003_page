@@ -315,6 +315,16 @@ body {
   display: none;
 }
 @media (max-width: 1000px){
+  .m-header-logo{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .m-header-logo img{
+    width: 180px;
+  }
+
   .m-wrapper{
     display: block;
   }
