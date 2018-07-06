@@ -63,8 +63,6 @@ body {
   height: 300px;
 }
 
-
-
 .intro-content-title {
   font-size: 30px;
   font-weight: bold;
@@ -299,3 +297,9 @@ body {
   cursor: pointer;
 }
 
+.submit-alert{
+  text-align: center;
+  margin-top: 30px;
+  display: none;
+  color: #b22222;
+}

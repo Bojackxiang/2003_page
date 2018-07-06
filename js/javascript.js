@@ -80,11 +80,17 @@ $(document).ready(function() {
           'Conent-Type': 'application/x-www-form-urlencoded',
       },
 
-      success: function(body, status, xhr) {
-        console.log(status)
+      success: function(response, status, xhr) {
+        if(response == "bad"){
+          $(".submit-alert").css('display','block');
+          $(".submit-alert").html("您已注册过。");
+        }else{
+          $(".submit-alert").css('display','block');
+          $(".submit-alert").html("恭喜您已成功提交，请注意查看邮箱，获取邮件");
+        }
       },
-      error: function(body, status, xhr) {
-        console.log(body);
+      error: function(data, status, xhr) {
+        console.log(JSON.parse(data));
       }
     });
   });
