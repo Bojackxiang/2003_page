@@ -60,11 +60,11 @@ $(document).ready(function() {
     e.stopPropagation();
 
     var name = $("#userName").val();
-    var name = $("#userSchool").val();
-    var name = $("#userEmail").val();
-    var name = $("#userMajor").val();
+    var school = $("#userSchool").val();
+    var emailAddress = $("#userEmail").val();
+    var major = $("#userMajor").val();
 
-    if (!name || !name || !name || !name) {
+    if (!name || !school || !emailAddress) {
       $(".submit-alert").css("display", "block");
       $(".submit-alert").html("请填写完整信息以获取福利");
     } else {
@@ -113,7 +113,7 @@ $(document).ready(function() {
     var majorm = $("#m-userMajor").val();
 
 
-    if (!namem || !schoolm || !emailAddressm || !majorm) {
+    if (!namem || !schoolm || !emailAddressm ) {
       $(".submit-alertm").css("display", "block");
       $(".submit-alertm").html("请填写完整信息以获取福利");
     } else {
