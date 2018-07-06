@@ -86,7 +86,7 @@ $(document).ready(function() {
           $(".submit-alert").html("您已注册过。");
         }else{
           $(".submit-alert").css('display','block');
-          $(".submit-alert").html("恭喜您已成功提交，请注意查看邮箱，获取邮件");
+          $(".submit-alert").html("恭喜您已成功提交，请注意查看邮箱，获取福利");
         }
       },
       error: function(data, status, xhr) {
