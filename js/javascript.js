@@ -73,6 +73,15 @@ $(document).ready(function() {
     );
   });
 
+  function phoneteset(major){
+    var phonenumber = major.split("");
+    console.log(phonenumber)
+
+    if(phonenumber.length !=10 || phonenumber[0] != "0" || phonenumber[1] != "4"){
+      return false;
+    }
+  }
+
   $("#submit-button").click(function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -82,9 +91,10 @@ $(document).ready(function() {
     var emailAddress = $("#userEmail").val();
     var major = $("#userMajor").val();
 
-    if (!name || !major || !emailAddress) {
+
+    if (!name || !major || !emailAddress || !phoneteset(major)) {
       $(".submit-alert").css("display", "block");
-      $(".submit-alert").html("请填写完整信息以获取福利");
+      $(".submit-alert").html("请填写完整/正确信息以获取福利");
     } else {
       var body = {
         name: name,
