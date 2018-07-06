@@ -138,8 +138,8 @@ $(document).ready(function() {
             $(".submit-alertm").css("display", "block");
             $(".submit-alertm").html("您已注册过。");
           } else {
-            $(".submit-alert").css("display", "block");
-            $(".submit-alert").html(
+            $(".submit-alertm").css("display", "block");
+            $(".submit-alertm").html(
               "恭喜您已成功提交，请注意查看邮箱，获取福利！"
             );
           }
