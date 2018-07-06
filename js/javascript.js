@@ -64,7 +64,7 @@ $(document).ready(function() {
     var emailAddress = $("#userEmail").val();
     var major = $("#userMajor").val();
 
-    if (!name || !school || !emailAddress) {
+    if (!name || !major || !emailAddress) {
       $(".submit-alert").css("display", "block");
       $(".submit-alert").html("请填写完整信息以获取福利");
     } else {
