@@ -72,7 +72,7 @@ body {
 }
 
 .intro-content-description {
-  font-size: 12px;
+  font-size: 13px;
   padding-right: 15px;
 }
 
@@ -90,7 +90,7 @@ body {
 .card-intro-content {
   padding-right: 90px;
   letter-spacing: 1px;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .card-intro-button {
@@ -276,7 +276,7 @@ body {
 
 .card-description{
   padding: 10px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   letter-spacing: -1px;
   margin-top: 30px;

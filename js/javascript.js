@@ -56,7 +56,6 @@ $(document).ready(function() {
   });
 
   $("#submit-button").click(function(e) {
-    alert("test");
     e.preventDefault();
     e.stopPropagation();
 
@@ -82,7 +81,7 @@ $(document).ready(function() {
       },
 
       success: function(body, status, xhr) {
-        console.log(body);
+        console.log(status)
       },
       error: function(body, status, xhr) {
         console.log(body);
