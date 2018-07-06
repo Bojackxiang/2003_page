@@ -60,11 +60,11 @@ $(document).ready(function() {
     e.stopPropagation();
 
     var name = $("#userName").val();
-    var school = $("#userSchool").val();
-    var emailAddress = $("#userEmail").val();
-    var major = $("#userMajor").val();
+    var name = $("#userSchool").val();
+    var name = $("#userEmail").val();
+    var name = $("#userMajor").val();
 
-    if (!name || !school || !emailAddress || !major) {
+    if (!name || !name || !name || !name) {
       $(".submit-alert").css("display", "block");
       $(".submit-alert").html("请填写完整信息以获取福利");
     } else {
@@ -88,6 +88,55 @@ $(document).ready(function() {
           if (response == "bad") {
             $(".submit-alert").css("display", "block");
             $(".submit-alert").html("您已注册过。");
+          } else {
+            $(".submit-alert").css("display", "block");
+            $(".submit-alert").html(
+              "恭喜您已成功提交，请注意查看邮箱，获取福利！"
+            );
+          }
+        },
+        error: function(data, status, xhr) {
+          console.log(JSON.parse(data));
+        }
+      });
+    }
+  });
+
+  $("#submit-button-m").click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+
+    var namem = $("#m-userName").val();
+    var schoolm = $("#m-userSchool").val();
+    var emailAddressm = $("#m-userEmail").val();
+    var majorm = $("#m-userMajor").val();
+
+
+    if (!namem || !schoolm || !emailAddressm || !majorm) {
+      $(".submit-alertm").css("display", "block");
+      $(".submit-alertm").html("请填写完整信息以获取福利");
+    } else {
+      var body = {
+        name: namem,
+        emailAddress: emailAddressm,
+        school: schoolm,
+        major: majorm,
+      };
+
+      $.ajax({
+        url: "https://www.aisfexpo.com.au/api/submit",
+        type: "POST",
+        dataType: "json",
+        data: body,
+        headers: {
+          "Conent-Type": "application/x-www-form-urlencoded"
+        },
+
+        success: function(response, status, xhr) {
+          if (response == "bad") {
+            $(".submit-alertm").css("display", "block");
+            $(".submit-alertm").html("您已注册过。");
           } else {
             $(".submit-alert").css("display", "block");
             $(".submit-alert").html(

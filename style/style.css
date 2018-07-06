@@ -456,4 +456,9 @@ body {
     margin-top: 50px;
   }
 
+  .submit-alertm{
+    display: none;
+    color: #b22222;
+  }
+
 }
