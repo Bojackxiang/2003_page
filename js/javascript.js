@@ -113,7 +113,7 @@ $(document).ready(function() {
     var majorm = $("#m-userMajor").val();
 
 
-    if (!namem || !schoolm || !emailAddressm ) {
+    if (!namem || !schoolm || !majorm ) {
       $(".submit-alertm").css("display", "block");
       $(".submit-alertm").html("请填写完整信息以获取福利");
     } else {
