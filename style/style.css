@@ -398,7 +398,7 @@ body {
     position: fixed;
     z-index: 999;
     right: 20px;
-
+    top:600px;
   }
 
   .logo-container{
