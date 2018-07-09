@@ -5,6 +5,7 @@
 
 body {
   background-color: #f0f0f0;
+  font-family: "Microsoft YaHei"; 
 }
 
 .body-container {
@@ -145,7 +146,6 @@ body {
 }
 
 .card-address {
-  padding: 5px;
   font-size: 9px;
   padding-top: 0px;
 }
@@ -156,7 +156,6 @@ body {
 }
 
 .card {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
 }
 
@@ -195,6 +194,12 @@ body {
   width: 960px;
 }
 
+.under-line{
+  height: 5px;
+  width: 50px;
+  background: linear-gradient(-90deg, red, orange);
+  margin-left: 20px;
+}
 /* ******************************************* */
 
 /* footer 样式 */
@@ -250,8 +255,8 @@ body {
 }
 
 .card{
-  border-bottom: 15px solid #b22222;
-  margin-top: 20px;
+  border-bottom: 10px solid #b22222;
+  margin-top: 10px;
 }
 
 .card-image{
@@ -265,7 +270,8 @@ body {
 .card-address{
   font-size: 10px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 20px;
+  padding-bottom: 15px;
 }
 
 .section .container{
@@ -274,11 +280,10 @@ body {
 
 .card-description{
   padding: 10px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: -1px;
-  margin-top: 30px;
-
+  margin-top: 10px;
 }
 
 .floating-button{
@@ -305,7 +310,7 @@ body {
 }
 
 .business-updating{
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 
@@ -367,10 +372,11 @@ body {
   
   .m-banner{
     display: block;
+    padding: 0;
   }
 
   .m-wrapper{
-    background-color: lightgrey;
+    background-color: white;
   }
 
   .desktop{
@@ -385,10 +391,16 @@ body {
     margin-top: -50px;
     text-align: right;
     padding-right: 90px;
+    position: fixed;
+    z-index:9999;
   }
 
   .btn-float img{
-    width: 50px;
+    width: 70px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+
   }
 
   .logo-container{
@@ -408,20 +420,25 @@ body {
   .title .aisf-title{
     font-size: 20px;
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei"; 
+    letter-spacing: 2px;
   }
 
   .aisf-description{
     font-size: 12px;
-    padding: 10px;
+    padding: 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
     font-size: 12px;
     letter-spacing: 0px;
     line-height: 20px;
+    
   }
 
   .card-img-wrap{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .card-img-wrap img{
@@ -430,11 +447,14 @@ body {
 
   .obtain-button-wrapper{
     padding-left: 20px;
+    padding-bottom: 30px;
   }
   .register-button{
     background-color: #b22222;
     padding: 5px 10px;
     color: white;
+    border: 0;
+    background: linear-gradient(-90deg, #b51e2e, #e24727);
   }
 
   .title-center{
@@ -442,10 +462,12 @@ body {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    padding-top: 60px;
   }
 
   .business-wrapper{
     margin-top: 50px;
+    background-color: #f1f1f1;
   }
 
   .card-container{
@@ -487,7 +509,7 @@ body {
   .footer-container .scan img{
     width: 120px;  
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   .footer-container{
@@ -508,5 +530,15 @@ body {
     display: none;
     color: #b22222;
   }
+
+  .info-list-ul{
+    padding:5px;
+  }
+
+  .info-list-ul li{
+    padding: 0px;
+  }
+
+
 
 }
