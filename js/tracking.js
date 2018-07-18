@@ -6,11 +6,6 @@ $(document).ready(function() {
   if (source.trim() == "") {
     source = "default";
   } else {
-    var stringQuery = source.split("/");
-    console.log(stringQuery)
-
-    stringQuery.reduce((first, second) => {
-      first.length > second.length ? first : second
-    });
+    source = source.split("/")[2];
   }
 });
