@@ -7,7 +7,9 @@ $(document).ready(function() {
     source = "default";
   } else {
     var stringQuery = source.split("/");
-    source = stringQuery.reduce((first, second) => {
+    console.log(stringQuery)
+
+    stringQuery.reduce((first, second) => {
       first.length > second.length ? first : second
     });
   }
