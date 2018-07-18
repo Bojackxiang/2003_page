@@ -9,8 +9,7 @@ $(document).ready(function() {
     source = new URL(document.referrer).hostname;
   }
 
-  sourceBody = {"source": source, deUrl: location};
-  console.log(sourceBody);
+  sourceBody = {"source": source};
   // sending the information
   $.ajax({
     url: "https://www.aisfexpo.com.au/api/source",
