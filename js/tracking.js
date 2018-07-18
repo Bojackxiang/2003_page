@@ -6,8 +6,23 @@ $(document).ready(function() {
   if (source.trim() == "") {
     source = "default";
   } else {
-    source = new URL(document.referrer).hostname
+    source = new URL(document.referrer).hostname;
   }
-  console.log(source);
-  
+
+  // sending the information
+  $.ajax({
+    url: "https://www.aisfexpo.com.au/api/source",
+    type: "POST",
+    dataType: "json",
+    data: body,
+    headers: {
+      "Conent-Type": "application/x-www-form-urlencoded"
+    },
+    success: function(data, status, xhr) {
+      console.log("data is obtained successfully");
+    },
+    error: function(xhr, status, err) {
+      console.log(err);
+    }
+  });
 });
