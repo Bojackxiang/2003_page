@@ -6,7 +6,7 @@ $(document).ready(function() {
   if (source.trim() == "") {
     source = "default";
   } else {
-    sourceQuery = source.split("/").indexOf("com");
+    sourceQuery = source.split("/");
     sourcePos =sourceQuery.indexOf(".com")
     source = sourceQuery[sourcePos];
     console.log(source);
