@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  console.log("pv statistics");
+ 
+    console.log(window.location);
+    console.log(decodeURIComponent(window.location));
   // source url
   var source = document.referrer;
 
@@ -9,7 +11,7 @@ $(document).ready(function() {
     source = new URL(document.referrer).hostname;
   }
 
-  sourceBody = {"source": source};
+  sourceBody = { source: source };
   // sending the information
   $.ajax({
     url: "https://www.aisfexpo.com.au/api/source",
