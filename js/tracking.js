@@ -7,7 +7,7 @@ $(document).ready(function() {
   if (source.trim() == "") {
     source = "default";
   } else {
-    source = source
+    source = new URL(document.referrer).hostname
   }
-  console.log(source);
+  
 });
