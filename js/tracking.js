@@ -9,7 +9,7 @@ $(document).ready(function() {
     source = new URL(document.referrer).hostname;
   }
 
-  sourceBody = {"source":source};
+  sourceBody = {"source":source, deUrl:window.location};
   console.log(sourceBody);
   // sending the information
   $.ajax({
