@@ -6,9 +6,6 @@ $(document).ready(function() {
   if (source.trim() == "") {
     source = "default";
   } else {
-    sourceQuery = source.split("/");
-    sourcePos =sourceQuery.indexOf(".com")
-    source = sourceQuery[sourcePos];
-    console.log(source);
+    source = source
   }
 });
