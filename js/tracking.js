@@ -7,5 +7,6 @@ $(document).ready(function() {
     source = "default";
   } else {
     source = source.split("/")[2];
+    console.log(source);
   }
 });
