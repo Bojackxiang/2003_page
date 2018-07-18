@@ -9,5 +9,6 @@ $(document).ready(function() {
   } else {
     source = new URL(document.referrer).hostname
   }
+  console.log(source);
   
 });
