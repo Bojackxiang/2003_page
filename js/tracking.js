@@ -8,4 +8,5 @@ $(document).ready(function() {
   } else {
     source = source
   }
+  console.log(source);
 });
