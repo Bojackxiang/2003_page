@@ -10,6 +10,7 @@ $(document).ready(function() {
   }
 
   sourceBody = {"source":source};
+  console.log(sourceBody);
   // sending the information
   $.ajax({
     url: "https://www.aisfexpo.com.au/api/source",
