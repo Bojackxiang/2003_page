@@ -9,12 +9,13 @@ $(document).ready(function() {
     source = new URL(document.referrer).hostname;
   }
 
+  sourceBody = {"source":source};
   // sending the information
   $.ajax({
     url: "https://www.aisfexpo.com.au/api/source",
     type: "POST",
     dataType: "json",
-    data: body,
+    data: sourceBody,
     headers: {
       "Conent-Type": "application/x-www-form-urlencoded"
     },
