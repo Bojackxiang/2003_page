@@ -1,7 +1,5 @@
 $(document).ready(function() {
  
-    console.log(window.location);
-    console.log(decodeURIComponent(window.location));
   // source url
   var source = document.referrer;
 
