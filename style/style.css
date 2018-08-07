@@ -352,6 +352,32 @@ body {
   display: none;
   color: #b22222;
 }
+
+.business-col{
+  padding-top: 20px;
+}
+
+.business-col-img{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.business-col-img img{
+  height: 90px;
+}
+
+.business-col-intro{
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.business-col-row-card{
+  display: table-cell;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 10px solid #b22222;
+  /* border-bottom: #bb2222 5px solid; */
+}
     
 
 @media (max-width: 1000px){
