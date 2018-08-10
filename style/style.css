@@ -378,6 +378,27 @@ body {
   border-bottom: 10px solid #b22222;
   /* border-bottom: #bb2222 5px solid; */
 }
+
+.new-card{
+  border-bottom: 5px solid #b22222; 
+  width: 100%;
+  margin-top: 20px;
+}
+
+.new-card .content{
+  padding: 10px;
+}
+
+.new-card img{
+  width: 100%;
+}
+
+.new-card{
+  padding: 20px;
+  font-size: 12px;
+}
+
+
     
 
 @media (max-width: 1000px){
