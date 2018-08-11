@@ -383,10 +383,14 @@ body {
   border-bottom: 2px solid #b22222; 
   width: 100%;
   margin-top: 20px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .new-card .content{
   padding: 10px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .new-card img{
